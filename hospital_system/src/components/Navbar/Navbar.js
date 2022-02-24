@@ -1,5 +1,6 @@
 import React from 'react'
 import './navstyles.css'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
 function Navbar() {
   return (
@@ -12,9 +13,9 @@ function Navbar() {
         
  
         <div className="menu">
-          <a href="/">Doctors Portal</a>
-          <a href="/">Staff Portal</a>
-          <a href="/">Admin Portal</a>
+          <a href="/doctorLogin">Doctors Portal</a>
+          <a href="/stafflogin">Staff Portal</a>
+          <a href="/adminlogin">Admin Portal</a>
           <div className="services">
             <a href="/">Products and Services</a>
 

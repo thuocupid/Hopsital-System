@@ -33,6 +33,7 @@ const DoctorLogin = () => {
 
     }
 
+
     return (
         <div>
             <img className="wave" src="../assets/LoginImages/bg.png" alt='wave'/>

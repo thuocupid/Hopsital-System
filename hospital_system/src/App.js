@@ -1,17 +1,28 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import {BrowserRouter,Routes, Route} from 'react-router-dom'
+import Dashboard from './components/Dashboard/Dashboard';
 import AdminLogin from './components/Log In pages/AdminLogin';
 import DoctorLogin from './components/Log In pages/DoctorLogin';
 import StaffLogin from './components/Log In pages/StaffLogin';
+import StraffLogin from './components/Log In pages/StaffLogin';
 import Navbar from './components/Navbar/Navbar';
-import Dashboard from './components/Dashboard/Dashboard';
 
 function App() {
   return (
-    <div>
-      <Dashboard />
-    </div>
+  <div>
+    <Navbar />
+    <BrowserRouter>
+      <Routes>
+        
+        <Route path='/doctorslogin' element={<DoctorLogin />} />
+        <Route path='/stafflogin' element={<StaffLogin />} />
+        <Route path='/adminlogin' element={<AdminLogin />} />
+        
+      </Routes>
+    </BrowserRouter>
+  </div>
   );
 }
+
 
 export default App;

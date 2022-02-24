@@ -92,7 +92,7 @@ function Dashboard() {
               <i className="bx bx-menu sidebarBtn" onClick={navToggle}/>
               <span className="dashboard">Dashboard</span>
             </div>
-            <div className="search-box">
+           <div className="search-box">
               <input type="text" placeholder="Search..." />
               <i className="bx bx-search" />
             </div>

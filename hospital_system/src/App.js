@@ -10,17 +10,17 @@ import Navbar from './components/Navbar/Navbar';
 function App() {
   return (
   <div>
-    {/* <Navbar />
+    <Navbar />
     <BrowserRouter>
       <Routes>
         
-        <Route path='/doctorslogin' element={<DoctorLogin />} />
+        <Route path='/doctorlogin' element={<DoctorLogin />} />
         <Route path='/stafflogin' element={<StaffLogin />} />
         <Route path='/adminlogin' element={<AdminLogin />} />
         
       </Routes>
-    </BrowserRouter> */}
-    <Dashboard />
+    </BrowserRouter>
+   
   </div>
   );
 }

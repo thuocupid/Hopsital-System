@@ -25,6 +25,12 @@ body{
     grid-gap :7rem;
     padding: 0 2rem;
 }
+.err{
+	color: red;
+	text-align: left;
+	display: inline;
+	white-space: nowrap;
+}
 
 .img{
 	display: flex;

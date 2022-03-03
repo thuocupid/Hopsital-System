@@ -1,5 +1,11 @@
 import React, {useState} from 'react'
 import './loginStyle.css'
+<<<<<<< Updated upstream
+=======
+import {Link} from 'react-router-dom'
+import Navbar from '../Navbar/Navbar';
+
+>>>>>>> Stashed changes
 
 const DoctorLogin = () => {
 
@@ -47,6 +53,7 @@ const DoctorLogin = () => {
 
     return (
         <div>
+            <Navbar />
             <img className="wave" src="../assets/LoginImages/bg.png" alt='wave'/>
                 <div className="container">
                     <div className="img">

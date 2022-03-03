@@ -2,6 +2,8 @@ import React from 'react'
 import './navstyles.css'
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 
+import {Link} from  "react-router-dom";
+
 function Navbar() {
   return (
     <div>   
@@ -13,9 +15,15 @@ function Navbar() {
         
  
         <div className="menu">
+<<<<<<< Updated upstream
           <a href="/doctorLogin">Doctors Portal</a>
           <a href="/stafflogin">Staff Portal</a>
           <a href="/adminlogin">Admin Portal</a>
+=======
+          <Link to="/doctorslogin">Doctors Portal</Link>
+          <Link to="/stafflogin">Staff Portal</Link>
+          <Link to="/adminlogin">Admin Portal</Link>
+>>>>>>> Stashed changes
           <div className="services">
             <a href="/">Products and Services</a>
 

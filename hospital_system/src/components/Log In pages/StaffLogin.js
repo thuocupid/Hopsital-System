@@ -1,4 +1,9 @@
 import React, {useState} from 'react'
+<<<<<<< Updated upstream
+=======
+import {Link} from 'react-router-dom'
+import Navbar from '../Navbar/Navbar';
+>>>>>>> Stashed changes
 
 function StaffLogin() {
   const [email, setEmail] = useState('');
@@ -37,6 +42,7 @@ function StaffLogin() {
       }
   }
 
+<<<<<<< Updated upstream
   const handleSubmit = (e)=>{
       e.preventDefault();
 
@@ -79,6 +85,50 @@ function StaffLogin() {
               </div>
        </div>
               )
+=======
+    return (
+        <div>
+            <Navbar />
+            <img className="wave" src="../assets/LoginImages/bg.png" alt='wave'/>
+                <div className="container">
+                    <div className="img">
+                        <img src="../assets/LoginImages/doctor2.svg" alt='logo' />
+                    </div>
+                    <div className="login-content">
+                        <form onSubmit={handleSubmit}>
+                            <img src="../assets/LoginImages/avatar.svg" alt='avatar'/>
+                                <h3 className="title">Staff Login</h3>
+                                <div className="input-div one">
+                                    <div className="i">
+                                        <i className="fas fa-user"></i>
+                                    </div>
+                                    <div className="div">
+                                        <input required type="email" className="input" placeholder='Enter Email' onChange={handleUsernameChange} value={email} />
+                                    </div>
+                                    {emailError && <small className='err'>{emailError}</small>} 
+                                </div>
+                                <div className="input-div pass">
+                                    <div className="i">
+                                        <i className="fas fa-lock"></i>
+                                    </div>
+                                    <div className="div">
+                                        <input required type="password" className="input" placeholder='Enter Password' onChange={handlePasswordChange} value={password}/>
+                                    </div>
+                                    {passError &&  <small className='err'>{passError}</small>} 
+                                </div>
+                                <p>Forgot password?</p>
+                                
+                                
+                                <input type="submit" className="btn" value="Login" disabled={btnDisabled} />
+                                
+                            
+                                                       
+                        </form> 
+                    </div>
+                </div>
+         </div>
+                )
+>>>>>>> Stashed changes
 }
 
 export default StaffLogin

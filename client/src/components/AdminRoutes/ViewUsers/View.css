@@ -1,0 +1,38 @@
+.viewUser{
+    width: 100%;
+    height: 98vh;
+    display: flex;
+
+}
+
+.userName {
+display: flex;
+align-items: center;
+
+}
+
+.doctorsTable {
+    height: 100vh;
+    width: 82%;
+    
+}
+
+.css-18lolh3-MuiDataGrid-root {
+    height: 98vh !important;
+    margin-top:5rem;
+  }
+
+.editBtnDr{
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.dltBtn{
+    background:  none;
+    color: red;
+    border: none;
+    padding-left: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
